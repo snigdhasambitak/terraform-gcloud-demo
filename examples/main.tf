@@ -1,5 +1,5 @@
 module "my_bucket" {
-  source = "../"
+  source = "git::https://github.com/snigdhasambitak/terraform-gcloud-demo.git?ref=main"
   name      = "bucket"
   stage     = "production"
   namespace = "snigdha"
