@@ -3,4 +3,5 @@ module "my_awesome_bucket" {
   name      = "bucket"
   stage     = "production"
   namespace = "snigdha"
+  project   = "playground-snigdha-lwqar"
 }

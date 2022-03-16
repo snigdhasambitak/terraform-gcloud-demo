@@ -1,6 +1,6 @@
 variable "location" {
   type        = string
-  default     = null
+  default     = "europe-west1"
   description = "The GCS region."
 }
 
