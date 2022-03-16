@@ -81,7 +81,7 @@ variable "context" {
 
 variable "enabled" {
   type        = bool
-  default     = false
+  default     = true
   description = "Set to false to prevent the module from creating any resources"
 }
 
