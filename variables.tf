@@ -12,7 +12,7 @@ variable "project" {
 
 variable "force_destroy" {
   type        = bool
-  default     = false
+  default     = true
   description = "When deleting a bucket, this boolean option will delete all contained objects."
 }
 

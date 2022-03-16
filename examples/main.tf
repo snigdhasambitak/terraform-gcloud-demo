@@ -4,6 +4,7 @@ module "my_bucket" {
   stage     = "production"
   namespace = "snigdha"
   project   = "playground-snigdha-lwqar"
+  force_destroy = true
 
   lifecycle_rules = [{
     action = {
@@ -17,6 +18,6 @@ module "my_bucket" {
 
   iam_members = [{
     role   = "roles/storage.objectViewer"
-    member = "saryakumar@travix.com"
+    member = "user:saryakumar@travix.com"
   }]
 }

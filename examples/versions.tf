@@ -7,7 +7,7 @@ terraform {
     }
   }
     backend "gcs" {
-    bucket  = "snigdha-production-bucket"
+    bucket  = "snigdha-production-bucket-terraform"
     prefix  = "terraform/state"
   }
 }
