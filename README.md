@@ -2,6 +2,8 @@
 Terraform module to create and manage the storage bucket.
 
 # Usage
+
+```
 module "awesome_bucket" {
   name      = "bucket"
   stage     = "production"
@@ -24,6 +26,7 @@ module "awesome_bucket" {
     member = "user:saryakumar@travix.com"
   }]
 }
+```
 
 # Requirements
 
