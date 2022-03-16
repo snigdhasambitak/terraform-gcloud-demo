@@ -1,12 +1,14 @@
 terraform {
   required_providers {
     google = {
+    #   credentials = "${file("service-account.json")}"  
       source  = "hashicorp/google"
-      version = ">= 3.0"
+      version = "~> 4.0"
     }
     google-beta = {
+    #   credentials = "${file("service-account.json")}"  
       source  = "hashicorp/google"
-      version = ">= 3.0"
+      version = "~> 4.0"
     }
   }
 #   backend "gcs" {

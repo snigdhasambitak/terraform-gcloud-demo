@@ -95,3 +95,12 @@ variable "lifecycle_rules" {
           The date in RFC 3339 (e.g. `2017-06-13`) when the object became nonconcurrent.
   DOC
 }
+
+variable "iam_members" {
+  description = "The list of IAM members to grant permissions on the bucket."
+  type = list(object({
+    role   = string
+    member = string
+  }))
+  default = []
+}

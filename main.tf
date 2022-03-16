@@ -1,5 +1,4 @@
 resource "google_storage_bucket" "default" {
-  count = var.enabled ? 1 : 0
 
   name          = module.this.id
   location      = var.location
@@ -43,4 +42,13 @@ resource "google_storage_bucket" "default" {
       default_kms_key_name = var.default_kms_key_name
     }
   }
+}
+
+resource "google_storage_bucket_iam_member" "members" {
+  for_each = {
+    for m in var.iam_members : "${m.role} ${m.member}" => m
+  }
+  bucket = google_storage_bucket.default.name
+  role   = each.value.role
+  member = each.value.member
 }
