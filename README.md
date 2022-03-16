@@ -57,4 +57,6 @@ terraform destroy # to destroy the built infrastructure
 ```
 # outputs
 
+```
 terraform output # outputs the created resources
+```
