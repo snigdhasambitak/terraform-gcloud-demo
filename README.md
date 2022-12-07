@@ -24,7 +24,7 @@ module "my_bucket" {
 
   iam_members = [{
     role   = "roles/storage.objectViewer"
-    member = "user:saryakumar@travix.com"
+    member = "user:saryakumar@example.com"
   }]
 }
 ```
