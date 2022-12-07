@@ -3,7 +3,7 @@ module "my_bucket" {
   name      = "bucket"
   stage     = "production"
   namespace = "snigdha"
-  project   = "playground-snigdha-lwqar"
+  project   = "playground-snigdha-s9tqz"
   force_destroy = true
 
   lifecycle_rules = [{
@@ -18,6 +18,6 @@ module "my_bucket" {
 
   iam_members = [{
     role   = "roles/storage.objectViewer"
-    member = "user:saryakumar@example.com"
+    member = "user:saryakumar@travix.com"
   }]
 }
